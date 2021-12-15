@@ -1,13 +1,15 @@
 body {
   margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
 h3 {
   font-size: 1.5rem;
+  margin: 0;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 15px 0 10px 0;
 }
 
@@ -25,6 +27,10 @@ a {
 
 p {
   margin: 0;
+}
+
+strong {
+  font-weight: bold;
 }
 
 body {
@@ -60,16 +66,9 @@ body {
 .reservation .reservation__search--desc {
   font-size: 1.2rem;
 }
-.reservation .reservation__search--button {
-  border-radius: 2rem;
-  border: 0;
-  color: #fff;
-  font-size: 1rem;
-  padding: 1rem;
-  background-image: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
-  box-shadow: 3px 3px 3px #dedada;
-  cursor: pointer;
-  margin: 1.5rem 0 3.5rem 0;
+
+.searchtitle {
+  margin: 1.2rem 0 1.2rem 0;
 }
 
 .function {
@@ -190,6 +189,155 @@ footer {
 }
 .footer__link .footer__link--subtitle {
   padding: 0 0 0 10px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin: 0;
+  font-family: "shrikhand", sans-serif;
+}
+
+.return {
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+
+.headerlogo {
+  text-align: center;
+  padding: 1rem 0 0.5rem 0;
+}
+
+.pagemenu__img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.pagemenu__title {
+  position: relative;
+  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 2.4rem 0 0 1.5rem;
+  margin-top: -2rem;
+  background-color: #f6f6f6;
+}
+
+.pagemenu {
+  background-color: #f6f6f6;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.menu__title {
+  margin: 0;
+  padding: 1rem 0 0 0;
+  font-size: 0.9rem;
+}
+
+.menu__title--underline {
+  width: 2.5rem;
+  border-top: 3px solid #99E2D0;
+  margin: 1rem 0 0 0;
+}
+
+.menu__desc {
+  position: relative;
+  background-color: #fff;
+  height: 70px;
+  padding: 0 0 12px 0;
+  margin: 1rem 0 1rem 0;
+  cursor: pointer;
+  overflow: hidden;
+  align-items: center;
+  width: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 3px 3px 10px #dedada;
+  animation: fadein 1.2s 0.3s ease-out both, transform 0.3s;
+}
+.menu__desc .menu__desc--title {
+  width: 100%;
+  padding: 5px 0 0 1rem;
+}
+.menu__desc .menu__desc--subtitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5rem 0 1rem;
+}
+.menu__desc .price {
+  font-size: 14px;
+  font-weight: bold;
+}
+.menu__desc .menu__desc--animation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  top: 0;
+  left: 100%;
+  width: 20%;
+  height: 100%;
+  border-radius: 0 1.5rem 1.5rem 0;
+  color: #fff;
+  font-size: 20px;
+  transform-origin: right;
+  visibility: hidden;
+}
+
+.txt {
+  font-size: 0.95rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.reservation__search--button {
+  border-radius: 2rem;
+  border: 0;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem;
+  background-image: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
+  box-shadow: 3px 3px 3px #dedada;
+  cursor: pointer;
+  margin: 1.5rem 0 3.5rem 0;
+}
+
+.pagemenu__button {
+  width: 190px;
+  border-radius: 2rem;
+  border: 0;
+  display: block;
+  margin: 3rem auto 2rem auto;
+  box-shadow: 3px 3px 3px #dedada;
+  font-size: 1rem;
+  color: #fff;
+  padding: 1rem;
+  background-image: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
+  cursor: pointer;
+}
+
+.pagemenu__heart {
+  position: absolute;
+  cursor: pointer;
+  transform-origin: bottom;
+  opacity: 1;
+  top: 2.5rem;
+  right: 8%;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.pagemenu__heart--active {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  transform-origin: bottom;
+  top: 2.5rem;
+  right: 8%;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

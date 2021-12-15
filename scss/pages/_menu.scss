@@ -1,0 +1,105 @@
+h1 {
+    font-size: 1.6rem;
+    margin: 0;
+    font-family: "shrikhand",sans-serif;
+}
+
+
+.return {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+}
+
+.headerlogo{
+    text-align: center;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.pagemenu__img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.pagemenu__title {
+    position: relative;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding: 2.4rem 0 0 1.5rem;
+    margin-top: -2rem;
+    background-color: #f6f6f6;
+}
+
+.pagemenu {
+    background-color: #f6f6f6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.menu__title {
+    margin: 0;
+    padding: 1rem 0 0 0;
+    font-size: 0.9rem;
+}
+
+.menu__title--underline {
+    width: 2.5rem;
+    border-top: 3px solid $tertiaire;
+    margin: 1rem 0 0 0;
+}
+
+.menu__desc {
+    position: relative;
+    background-color: #fff;
+    height: 70px;
+    padding: 0 0 12px 0;
+    margin: 1rem 0 1rem 0;
+    cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 10px #dedada;
+    animation: fadein 1.2s .3s ease-out both,transform .3s;
+
+    .menu__desc--title {
+        width: 100%;
+        padding: 5px 0 0 1rem;
+    }
+
+    .menu__desc--subtitle {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem 0 1rem;
+    }
+
+    .price {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .menu__desc--animation {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $tertiaire;
+        top: 0;
+        left: 100%;
+        width: 20%;
+        height: 100%;
+        border-radius: 0 1.5rem 1.5rem 0;
+        color: #fff;
+        font-size: 20px;
+        transform-origin: right;
+        visibility: hidden;
+    }
+}
+
+.txt {
+    font-size: 0.95rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

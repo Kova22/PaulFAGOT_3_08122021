@@ -1,0 +1,25 @@
+.reservation__search--button {
+    border-radius: 2rem;
+    border: 0;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+    background-image: radial-gradient(ellipse farthest-corner at 20px 0, $secondaire 0%, $primaire 100%);
+    box-shadow: 3px 3px 3px $shadow;
+    cursor: pointer;
+    margin: 1.5rem 0 3.5rem 0;
+}
+
+.pagemenu__button {
+    width: 190px;
+    border-radius: 2rem;
+    border: 0;
+    display: block;
+    margin: 3rem auto 2rem auto;
+    box-shadow: 3px 3px 3px #dedada;
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem;
+    background-image: radial-gradient(ellipse farthest-corner at 20px 0, $secondaire 0%, $primaire 100%);
+    cursor: pointer;
+}
