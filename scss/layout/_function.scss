@@ -1,0 +1,37 @@
+.function {
+    background: #fff;
+    padding: 0 0 40px 0;
+    .function__title {
+        padding: 3rem 0 2rem 1rem;
+        text-align: start;
+    }
+    .function__step {
+        display: flex;
+        padding: 1.3rem 0 1.3rem 0;
+        margin: 0 1rem 25px 1.2rem;
+        align-items: center;
+        border-radius: 1.5rem;
+        box-shadow: 3px 3px 10px $shadow;
+
+        .function__step--number {
+            color: #fff;
+            background-color: $primaire;
+            border: 1px solid $primaire;
+            border-radius: 50%;
+            font-size: 1rem;
+            padding: 4px 8px 4px 8px;
+            margin: 0 1.5rem 0 -12px;
+        }
+        
+        .function__step--icon {
+            font-size: 20px;
+            color: #7e7e7e;
+        }
+
+        .function__step--title {
+            margin-left: 2rem;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.reservation {
+    flex-direction: column;
+    text-align: center;
+    background-color: #f6f6f6;
+
+    .reservation__map {
+        background-color: #eaeaea;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0 1rem 0;
+        box-shadow: 0px 3px 3px #73737338 inset;
+
+        .reservation__map--icon {
+            margin: 0 1.5rem 0 -2rem;
+        }
+    }
+    .reservation__search--desc {
+        font-size: 1.2rem;
+    }
+    .reservation__search--button {
+        border-radius: 2rem;
+        border: 0;
+        color: #fff;
+        font-size: 1rem;
+        padding: 1rem;
+        background-image: radial-gradient(ellipse farthest-corner at 20px 0, $secondaire 0%, $primaire 100%);
+        box-shadow: 3px 3px 3px $shadow;
+        cursor: pointer;
+        margin: 1.5rem 0 3.5rem 0;
+    }
+}
