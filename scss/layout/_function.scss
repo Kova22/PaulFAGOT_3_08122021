@@ -35,3 +35,33 @@
         }
     }
 }
+
+.function__step:hover{
+    background-color: rgb(217, 198, 234);
+    .function__step--icon {
+        color: $primaire;
+    }
+    .function__step--title {
+        color: $primaire;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        max-width: 1080px;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+    }
+    .function__step--title {
+        padding: 0 20px 0 10px;
+    }
+    .function__title {
+        display: flex;
+        max-width: 1080px;
+        margin: auto;
+        align-items: flex-start;
+    }
+}

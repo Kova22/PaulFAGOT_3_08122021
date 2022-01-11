@@ -1,6 +1,5 @@
 .restaurant {
     background: #f6f6f6;
-    margin: 0 0 40px 0;
     .restaurant__title {
         padding: 2rem 0 1rem 1rem;
         text-align: start;
@@ -29,24 +28,6 @@
             padding-left: 1rem;
             height: 75px;
         }
-        .restaurant__card--heart {
-            position: absolute;
-            transform-origin: bottom;
-            opacity: 1;
-            font-size: 24px;
-            right: 1.5rem;
-            bottom: 2.5rem;
-            cursor: pointer;
-        }
-        .restaurant__heart--animation {
-            position: absolute;
-            opacity: 0;
-            transform-origin: bottom;
-            font-size: 25px;
-            right: 1.5rem;
-            bottom: 2.5rem;
-            cursor: pointer;
-        }
         .restaurant__card--tag {
             border-radius: 3px;
             background: $tertiaire;
@@ -60,3 +41,29 @@
     }
     
 }
+
+.resttitle {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1080px) {
+    .restaurant__cards {
+        display: flex;
+        margin: auto;
+        max-width: 1080px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .restaurant__card {
+        width: 490px;
+    }
+    .restaurant__title {
+        display: flex;
+        max-width: 1080px;
+        margin: auto;
+        align-items: flex-start;
+    }
+}
+
+
+

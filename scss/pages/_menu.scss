@@ -1,3 +1,4 @@
+$size-check: 80px;
 h1 {
     font-size: 1.6rem;
     margin: 0;
@@ -61,11 +62,17 @@ h1 {
     width: 100%;
     border-radius: 1.5rem;
     box-shadow: 3px 3px 10px #dedada;
-    animation: fadein 1.2s .3s ease-out both,transform .3s;
+    animation: appear .6s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    transform: scale(0);
+    transition: padding-right .3s ease-out;
+    box-sizing: border-box;
 
     .menu__desc--title {
         width: 100%;
-        padding: 5px 0 0 1rem;
+        padding: 0 0 0 1rem;
+        
     }
 
     .menu__desc--subtitle {
@@ -79,27 +86,62 @@ h1 {
         font-weight: bold;
     }
     
+    
+
+}
+.menu__desc--animation {
+    
+    position: absolute;
+    right: 0;
+    transform: translateX($size-check);
+    background-color: $tertiaire;
+    width: $size-check;
+    height: 100%;
+    top: 0;
+    transition: transform .3s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.menu__desc:hover {
+    padding-right: $size-check;
+
+    .fa-check-circle {
+        transform: rotate(360deg);
+    }
     .menu__desc--animation {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $tertiaire;
-        top: 0;
-        left: 100%;
-        width: 20%;
-        height: 100%;
-        border-radius: 0 1.5rem 1.5rem 0;
-        color: #fff;
-        font-size: 20px;
-        transform-origin: right;
-        visibility: hidden;
+        transform: translateX(0);
     }
 }
 
+.fa-check-circle {
+    transition: transform .4s ease-in-out ;
+    transform: rotate(0deg);
+    font-size: 1.2rem;
+    color: white;
+}
 .txt {
     font-size: 0.95rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+
+@media screen and (min-width: 1080px) {
+    .pagemenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+    }
+    .menu__desc {
+        width: 325px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .menu__desc {
+        width: 375px;
+    }
 }

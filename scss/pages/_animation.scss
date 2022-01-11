@@ -1,0 +1,50 @@
+@keyframes appear {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@for $i from 0 through 9 {
+    .delay-#{$i} {
+        animation-delay: 0.1s * $i;
+    }
+  }
+
+.loader {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: #ffff;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.95;
+    animation: disappear 200ms 2s forwards;
+    transform-origin: top;
+    &::before{
+        content: "";
+        height: 100px;
+        width: 100px;
+        border-bottom: 3px solid transparent;
+        border-left: 4px solid $primaire;
+        border-right: 4px solid $secondaire;
+        border-radius: 50%;
+        animation: spin 0.75s infinite;
+    }
+
+}
+
+@keyframes disappear {
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

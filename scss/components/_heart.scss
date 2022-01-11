@@ -1,20 +1,52 @@
-.pagemenu__heart {
-    position: absolute;
-    cursor: pointer;
-    transform-origin: bottom;
-    opacity: 1;
-    top: 2.5rem;
-    right: 8%;
-    font-size: 1.5rem;
-    color: #000000;
-    
+.restaurant__heart{
+  transform-origin: bottom;
+  font-size: 27px;
+
+  cursor: pointer;
+    .fa-gradient {
+        opacity: 0;
+    }
+    .heart-like {
+        opacity: 1;
+    }
+    .fa-heart {
+        transition: opacity 0.3s ease-out;
+    }
+    &:hover .heart-like { 
+        opacity: 0; 
+    }
+    &:hover .fa-gradient {
+        opacity: 1;
+    }
+
 }
-.pagemenu__heart--active {
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    transform-origin: bottom;
-    top: 2.5rem;
-    right: 8%;
-    font-size: 1.5rem;
+
+.restaurant__heart--animation:hover {
+  opacity: 1;
+}
+
+.fa-heart::before {
+  content: "\f004";
+}
+.fa-gradient {
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(#9356dc),
+    to(#ff79da)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heart-pos {
+  position: absolute;
+  right: 1.8rem;
+  bottom: 2.3rem;
+}
+.heart-position {
+  position: absolute;
+  right: 3rem;
+  bottom: 0.5rem;
 }

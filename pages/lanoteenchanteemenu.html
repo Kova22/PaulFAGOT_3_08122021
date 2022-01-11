@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +12,7 @@
     <title>menu-lanoteenchantee</title>
 </head>
 <body>
+
     <!-- HEADER -->
     <header>
         <a href="../index.html" class="return">
@@ -25,11 +27,9 @@
     <img src="../images/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant la palette du goût" class="pagemenu__img">
     <div class="pagemenu__title">
         <h1>La note enchantée</h1>
-        <div class="pagemenu__heart">
-            <i class="far fa-heart"></i>
-        </div>
-        <div class="pagemenu__heart--active">
-            <i class="fas fa-heart"></i>
+        <div class="restaurant__heart"> 
+            <i class="heart-position far fa-heart heart-like "></i>
+            <i class="heart-position fas fa-heart fa-gradient "></i>
         </div>
     </div>
     <!-- DESCRIPTION -->
@@ -40,7 +40,7 @@
         <div class="menu">
             <div class="menu__title">ENTRÉES</div>
             <div class="menu__title--underline"></div>
-            <div class="menu__desc">
+            <div class="delay-0 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Ravioles de foie gras</strong>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-1 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Caviar osciètre</strong>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-2 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Homar et espuma de potiron</strong>
@@ -88,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-3 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Foie gras de canard cuit entier</strong>
@@ -110,7 +110,7 @@
         <div class="menu">
             <div class="menu__title">PLATS</div>
             <div class="menu__title--underline"></div>
-            <div class="menu__desc">
+            <div class="delay-4 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Noix de coquilles Saint-Jacques</strong>
@@ -126,7 +126,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-5 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Langoustine poêlée</strong>
@@ -142,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-6 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Mijotée de queue de boeuf</strong>
@@ -163,7 +163,7 @@
         <div class="menu">
             <div class="menu__title">DESSERTS</div>
             <div class="menu__title--underline"></div>
-            <div class="menu__desc">
+            <div class="delay-7 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Macaron noisette et chocolat</strong>
@@ -179,7 +179,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-8 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Baba au rhum revisité</strong>
@@ -195,7 +195,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-9 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Tarte au citron meringuée</strong>
@@ -211,9 +211,11 @@
                     </div>
                 </div>
             </div>
-            <button class="pagemenu__button">Commander</button>
         </div>
     </main>
+    <div class="pagemenu__CtnBtn">
+        <button class="pagemenu__button">Commander</button>
+    </div>
     <!-- MAIN -->
 
 

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +13,15 @@
 </head>
 
 <body>
+
+    <!-- LOADER -->
+    <div class="loader">
+    </div>
+    <!-- LOADER -->
+
+
     <!-- MAIN -->
+
     <main class="content">
 
         <!-- HEADER -->
@@ -48,31 +57,33 @@
             <div class="function__title">
                 <h3>Fonctionnement</h3>
              </div>
-             <div class="function__step">
-                  <span class="function__step--number">1</span>
-                  <div class="function__step--icon">
-                      <i class="fas fa-mobile-alt"></i>
-                 </div>
-                  <div class="function__step--title">
-                   <p>Choisissez un restaurant</p>
-                 </div>
-             </div>
-             <div class="function__step">
-                  <span class="function__step--number">2</span>
-                  <div class="function__step--icon">
-                      <i class="fas fa-list"></i>
-                  </div>
-                <div class="function__step--title">
-                   <p>Composez votre menu</p>
+             <div class="container">
+                <div class="function__step">
+                    <span class="function__step--number">1</span>
+                    <div class="function__step--icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="function__step--title">
+                    <p>Choisissez un restaurant</p>
+                    </div>
                 </div>
-            </div>
-            <div class="function__step">
-                <span class="function__step--number">3</span>
-                <div class="function__step--icon">
-                    <i class="fas fa-store"></i>
+                <div class="function__step">
+                    <span class="function__step--number">2</span>
+                    <div class="function__step--icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <div class="function__step--title">
+                    <p>Composez votre menu</p>
+                    </div>
                 </div>
-                <div class="function__step--title">
-                  <p>Dégustez au restaurant</p>
+                <div class="function__step">
+                    <span class="function__step--number">3</span>
+                    <div class="function__step--icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="function__step--title">
+                    <p>Dégustez au restaurant</p>
+                    </div>
                 </div>
             </div>
         </div>  
@@ -81,7 +92,7 @@
         <!-- Restaurants -->
         <article class="restaurant">
             <div class="restaurant__title">
-                <h2>Restaurants</h2>
+                <h2 class="resttitle">Restaurants</h2>
             </div>
             <div class="restaurant__cards">
 
@@ -97,11 +108,9 @@
                             <p>
                                 Ménilmontant
                             </p>
-                            <div class="restaurant__card--heart">
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="restaurant__heart--animation">
-                                <i class="fas fa-heart fa-gradient"></i>
+                            <div class="restaurant__heart"> 
+                                <i class="far fa-heart heart-like heart-pos"></i>
+                                <i class="fas fa-heart fa-gradient heart-pos"></i>
                             </div>
                         </div>
                     </div>
@@ -118,11 +127,9 @@
                             <p>
                                 Charonne
                             </p>
-                            <div class="restaurant__card--heart">
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="restaurant__heart--animation">
-                                <i class="fas fa-heart fa-gradient"></i>
+                            <div class="restaurant__heart"> 
+                                <i class="far fa-heart heart-like heart-pos"></i>
+                                <i class="fas fa-heart fa-gradient heart-pos"></i>
                             </div>
                         </div>
                     </div>
@@ -131,7 +138,6 @@
                 <a href="pages/alafrançaisemenu.html" class="card3">
                     <div class="restaurant__card">
                         <img src="images/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" class="restaurant__card--img">
-                        <div class="restaurant__card--tag">Nouveau</div>
                         <div class="restaurant__card--text">
                             <h2>
                                 <strong>À la française</strong>
@@ -139,11 +145,9 @@
                             <p>
                                 Cité Rouge
                             </p>
-                            <div class="restaurant__card--heart">
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="restaurant__heart--animation">
-                                <i class="fas fa-heart fa-gradient"></i>
+                            <div class="restaurant__heart"> 
+                                <i class="far fa-heart heart-like heart-pos"></i>
+                                <i class="fas fa-heart fa-gradient heart-pos"></i>
                             </div>
                         </div>
                     </div>
@@ -152,7 +156,6 @@
                 <a href="pages/ledelicedessensmenu.html" class="card4">
                     <div class="restaurant__card">
                         <img src="images/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" class="restaurant__card--img">
-                        <div class="restaurant__card--tag">Nouveau</div>
                         <div class="restaurant__card--text">
                             <h2>
                                 <strong>Le délice des sens</strong>
@@ -160,11 +163,9 @@
                             <p>
                                 Folie-Méricourt
                             </p>
-                            <div class="restaurant__card--heart">
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="restaurant__heart--animation">
-                                <i class="fas fa-heart fa-gradient"></i>
+                            <div class="restaurant__heart"> 
+                                <i class="far fa-heart heart-like heart-pos"></i>
+                                <i class="fas fa-heart fa-gradient heart-pos"></i>
                             </div>
                         </div>
                     </div>
@@ -204,6 +205,21 @@
         </div>
     </footer>
     <!-- FOOTER -->
+
+    <!-- SVG -->
+
+    <svg style="display: none;">
+        <defs>
+            <linearGradient id="degradeCoeur" x1="1" x2="0" y1="0" y2="1">
+              <stop stop-color="#9356DC" offset="5%"/>
+              <stop stop-color="#FF79DA" offset="95%"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- SVG -->
+
+
 
 </body>
 

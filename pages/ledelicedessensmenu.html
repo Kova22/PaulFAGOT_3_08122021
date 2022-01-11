@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +12,7 @@
     <title>menu-lesdelicesdessens</title>
 </head>
 <body>
+
     <!-- HEADER -->
     <header>
         <a href="../index.html" class="return">
@@ -25,11 +27,9 @@
     <img src="../images/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant la palette du goût" class="pagemenu__img">
     <div class="pagemenu__title">
         <h1>Le délice des sens</h1>
-        <div class="pagemenu__heart">
-            <i class="far fa-heart"></i>
-        </div>
-        <div class="pagemenu__heart--active">
-            <i class="fas fa-heart"></i>
+        <div class="restaurant__heart"> 
+            <i class="heart-position far fa-heart heart-like "></i>
+            <i class="heart-position fas fa-heart fa-gradient "></i>
         </div>
     </div>
     <!-- DESCRIPTION -->
@@ -40,7 +40,7 @@
         <div class="menu">
             <div class="menu__title">ENTRÉES</div>
             <div class="menu__title--underline"></div>
-            <div class="menu__desc">
+            <div class="delay-0 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Tartare de thon</strong>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-1 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Bouchée de homard croustillant</strong>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-2 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Veloutée de cèpes</strong>
@@ -94,7 +94,7 @@
         <div class="menu">
             <div class="menu__title">PLATS</div>
             <div class="menu__title--underline"></div>
-            <div class="menu__desc">
+            <div class="delay-3 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Poulet rôti aux herbes de Provence</strong>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-4 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Langouste rôtie</strong>
@@ -126,7 +126,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-5 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Côte de boeuf Angus</strong>
@@ -147,7 +147,7 @@
         <div class="menu">
             <div class="menu__title">DESSERTS</div>
             <div class="menu__title--underline"></div>
-            <div class="menu__desc">
+            <div class="delay-6 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Farandole de desserts</strong>
@@ -163,7 +163,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-7 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Crème brulée</strong>
@@ -179,7 +179,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-8 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Tiramisu</strong>
@@ -195,9 +195,12 @@
                     </div>
                 </div>
             </div>
-            <button class="pagemenu__button">Commander</button>
         </div>
     </main>
+    <div class="pagemenu__CtnBtn">
+        <button class="pagemenu__button">Commander</button>
+    </div>
+    
     <!-- MAIN -->
 
 

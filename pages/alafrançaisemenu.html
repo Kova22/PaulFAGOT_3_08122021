@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -25,11 +26,9 @@
     <img src="../images/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant la palette du goût" class="pagemenu__img">
     <div class="pagemenu__title">
         <h1>À la française</h1>
-        <div class="pagemenu__heart">
-            <i class="far fa-heart"></i>
-        </div>
-        <div class="pagemenu__heart--active">
-            <i class="fas fa-heart"></i>
+        <div class="restaurant__heart"> 
+            <i class="heart-position far fa-heart heart-like "></i>
+            <i class="heart-position fas fa-heart fa-gradient "></i>
         </div>
     </div>
     <!-- DESCRIPTION -->
@@ -40,7 +39,7 @@
         <div class="menu">
             <div class="menu__title">ENTRÉES</div>
             <div class="menu__title--underline"></div>
-            <div class="menu__desc">
+            <div class="delay-0 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Tartare de poulpe acidulée</strong>
@@ -51,12 +50,10 @@
                     <div class="price">25€</div>
                 </div>
                 <div class="menu__desc--animation">
-                    <div class="menu__desc--circle">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
+                    <i class="fas fa-check-circle"></i>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-1 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Veloutée de légumes d'antan</strong>
@@ -72,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-2 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Soupe à l'oignon</strong>
@@ -94,7 +91,7 @@
         <div class="menu">
             <div class="menu__title">PLATS</div>
             <div class="menu__title--underline"></div>
-            <div class="menu__desc">
+            <div class="delay-3 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Coquilles Saint-Jacques</strong>
@@ -110,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-4 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Magret de canard</strong>
@@ -126,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-5 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Pigeonneau d'Ille-et-Vilaine</strong>
@@ -147,7 +144,7 @@
         <div class="menu">
             <div class="menu__title">DESSERTS</div>
             <div class="menu__title--underline"></div>
-            <div class="menu__desc">
+            <div class="delay-6 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Pétales de vilettes glacés</strong>
@@ -163,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-7 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Fondant au chocolat</strong>
@@ -179,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu__desc">
+            <div class="delay-8 menu__desc">
                 <div class="menu__desc--title">
                     <h2>
                         <strong>Millefeuille croustillant</strong>
@@ -195,9 +192,11 @@
                     </div>
                 </div>
             </div>
-            <button class="pagemenu__button">Commander</button>
         </div>
     </main>
+    <div class="pagemenu__CtnBtn">
+        <button class="pagemenu__button">Commander</button>
+    </div>
     <!-- MAIN -->
 
 
@@ -228,6 +227,7 @@
         </div>
     </footer>
     <!-- FOOTER -->
+
 
 </body>
 </html>
