@@ -295,7 +295,7 @@ h1 {
   width: 100%;
   border-radius: 1.5rem;
   box-shadow: 3px 3px 10px #dedada;
-  animation: appear 0.6s;
+  animation: appear 1s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   transform: scale(0);
@@ -373,10 +373,12 @@ h1 {
 }
 @keyframes appear {
   0% {
-    transform: scale(0);
+    opacity: 0;
+    transform: translateY(50px);
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 .delay-0 {
@@ -459,12 +461,15 @@ h1 {
   font-size: 1rem;
   padding: 1rem;
   background-image: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
-  box-shadow: 3px 3px 3px #dedada;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   margin: 1.5rem 0 3.5rem 0;
 }
 .reservation__search--button:hover {
-  transform: scale(1.03);
+  background-color: #fff;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  filter: brightness(1.05);
+  transition-duration: 0.25s;
 }
 
 .pagemenu__button {
@@ -473,7 +478,7 @@ h1 {
   border: 0;
   display: block;
   margin: 3rem auto 2rem auto;
-  box-shadow: 3px 3px 3px #dedada;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   font-size: 1rem;
   color: #fff;
   padding: 1rem;
@@ -481,7 +486,10 @@ h1 {
   cursor: pointer;
 }
 .pagemenu__button:hover {
-  transform: scale(1.03);
+  background-color: #fff;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  filter: brightness(1.05);
+  transition-duration: 0.25s;
 }
 
 @media screen and (min-width: 1080px) {

@@ -62,7 +62,7 @@ h1 {
     width: 100%;
     border-radius: 1.5rem;
     box-shadow: 3px 3px 10px #dedada;
-    animation: appear .6s;
+    animation: appear 1s;
     animation-fill-mode: both;
     animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     transform: scale(0);
